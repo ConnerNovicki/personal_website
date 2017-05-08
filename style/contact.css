@@ -1,0 +1,14 @@
+.contact-div {
+  padding-left: 40px;
+  font-size: 20px;
+  min-height: 100%;
+}
+
+.contact-div a {
+  color: rgb(179, 103, 27);
+}
+
+.contact-div a:hover {
+  color: rgb(136, 80, 23);
+  text-decoration: none;
+}

@@ -1,0 +1,52 @@
+.jumbotron-div {
+  padding-left: 50px;
+  height: auto;
+  background: rgb(45, 45, 45);
+}
+
+.jumbotron-div h1 {
+  margin-top: 0px;
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
+}
+
+.nav-bar-div {
+  display: table;
+}
+
+.nav-bar-div nav {
+  margin: 50px;
+}
+
+.nav-bar-div ul {
+  list-style-type: none;
+}
+
+.nav-bar-div li {
+  height: 25px;
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #aaa;
+  padding: 0 20px;
+}
+
+.nav-bar-div li:last-child {
+  border-right: none;
+}
+
+.nav-bar-div li a {
+  text-decoration: none;
+  color: #ccc;
+  font: 25px/1 Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease;
+}
+
+.nav-bar-div li a:hover {
+  color: #4c62b1;
+}
+
+.nav-bar-div li.active a {
+  font-weight: bold;
+  color: #333;
+}
