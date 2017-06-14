@@ -2,51 +2,181 @@ import React from 'react';
 
 import '../../style/home.css';
 
+const chartMaker = (data) => {
+  const { title, bulletPoints } = data;
+  return (
+    <tbody>
+      <tr>
+        <td className="col-md-3">{title}</td>
+        <td className="col-md-9 uncentered-td">
+          <ul>
+          {bulletPoints.map(point => (
+            <li>{point}</li>
+          ))}
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  )
+}
+
+/*
+data = [
+  {
+    title: string,
+    bulletPoints: [
+      '', '', ''
+    ]
+  }
+]
+*/
+
+const tableMaker = (title, data) => {
+  return (
+    <table className="table table-bordered table-inverse skills-table">
+      <thead className="thead-main">
+        <tr>
+          <td>{title}</td>
+        </tr>
+      </thead>
+        {data.map(chartMaker)}
+    </table>
+  );
+}
+
 const Home = () => {
   return (
-    <div className="about-div">
-      <p>I graduated from the University of Kentucky with a B.S. in Mathematics
-      and a minor in Computer Science.</p>
-
-      <p>I am looking for a <b>web development</b> job.</p>
-
-      <h3>Current skills include:</h3>
-      <div className="skills-div-outer">
-        <div className="skills-div-inner">
-          <ul className="skills-list">
-            <li>JavaScript + ES2016</li>
-            <li>ReactJS + Redux</li>
-            <li>Node.js + NPM</li>
-            <li>GIT + GitHub</li>
-            <li>HTML + CSS + Bootstrap</li>
-            <li>API usage</li>
-            <li>C++</li>
-            <li>OOP</li>
-            <li>Linux/Unix</li>
-            <li>MVC</li>
-            <li>Python</li>
-            <li>Java</li>
-          </ul>
-        </div>
+    <div className="home-container">
+      <div className="col-md-10 col-md-offset-1 about-me">
+        <p>I graduated from the University of Kentucky with a B.S. in Mathematics
+        and a minor in Computer Science.</p>
+        <br/>
+        <p>I am looking for a <b>JavaScript developer</b> job.</p>
       </div>
-      <div style={{height: 50}}></div>
+
+      <h3 className="col-md-12">Current skills include:</h3>
+      <div className="col-md-10 col-md-offset-1">
+
+
+      {tableMaker(
+        'JavaScript / TypeScript',
+        [
+          {
+            title: 'ReactJS, React Native, and Redux',
+            bulletPoints: [
+              'I made this site (and a few others on my GitHub) with ReactJS and Redux.',
+              'Strong understanding of the flow of a Redux application (Actions -> Middleware -> Reducers -> Store)',
+              'Understanding of iOS development (with FlexBox) and how to create cross-platform apps'
+            ]
+          },
+          {
+            title: 'Angular 2/4 and Ngrx',
+            bulletPoints: [
+              'Understanding of how to break down apps into components with use of directives, routing, and services.',
+              'Comfortable using Ngrx (Actions, Reducers, State Interfaces, Store, and @Effects)'
+            ]
+          },
+          {
+            title: 'General',
+            bulletPoints: [
+              'Comfortable using ES2016, prototypes, classes, etc.',
+              'Experience writing applications using AJAX requests, JSON, and jQuery.',
+              'I have been putting in hours of JavaScript coding a day for the last year.'
+            ]
+          },
+          {
+            title: 'Node.js',
+            bulletPoints: [
+              'Knowledge of dependency/module management with NPM.',
+              'Understanding of basics of Webpack.'
+            ]
+          }
+        ]
+      )}
+
+      {tableMaker(
+        'Linux / Unix',
+        [
+          {
+            title: 'Command Line Navigation',
+            bulletPoints: [
+              'Practical knowledge navigating the Mac and Linux command line.',
+              'Practical use of many different CLI\'s and console-based applications.',
+              'Last 4 CS classes in college all required using Linux environment.'
+            ]
+          }
+        ]
+      )}
+
+      {tableMaker(
+        'Object Oriented Programming',
+        [
+          {
+            title: 'C++',
+            bulletPoints: [
+              'Completed 4 college C++ courses.',
+              'Experience working with classes, inheritance, abstraction, and polymorphism.'
+            ]
+          },
+          {
+            title: 'Java',
+            bulletPoints: [
+              'Worked with Spark on a small project.',
+              'Understand basics of Gradle/Maven dependency management tools.'
+            ]
+          }
+        ]
+      )}
+
+      {tableMaker(
+        'Front End',
+        [
+          {
+            title: 'HTML5 + CSS3',
+            bulletPoints: [
+              'Built this site (and many others) with HTML/CSS'
+            ]
+          },
+          {
+            title: 'Bootstrap',
+            bulletPoints: [
+              'Understanding of how to use the grid system and use pre-made buttons, tables, etc.',
+              'Experience using with both ReactJS and Angular 4'
+            ]
+          }
+        ]
+      )}
+
+      {tableMaker(
+        'Other',
+        [
+          {
+            title: 'GIT',
+            bulletPoints: [
+              'Use version control on every project.',
+              'Experience working with others on same repository.',
+              'Experience with both GitHub and BitBucket.'
+            ]
+          },
+          {
+            title: 'REST APIs',
+            bulletPoints: [
+              'Experience working with APIs with Angular, React, and plain JavaScript.',
+              'Have multiple projects on GitHub using Weather API and Riot API.'
+            ]
+          },
+          {
+            title: 'Python',
+            bulletPoints: [
+              'Comfortable with Python syntax (classes, functions, etc.)'
+            ]
+          }
+        ]
+      )}
+      </div>
     </div>
+
   );
 }
 
 export default Home;
-
-
-      // <p>If you know anything about Myers-Briggs, I am a classic INTP. I strive to
-      // grow and learn things in the field of my studies and passions on a daily basis.
-      // I don't want a day to go by without thinking critically about the things I am
-      // doing and how I am living my life. </p>
-      //
-      // <p>I am a man of efficiency. Whether it be getting homework done, studying for a
-      // test, or even simply trying to win a video game, I am always thinking of ways
-      // to improve what I am doing to produce better results. </p>
-      //
-      // <p>In my free time, I enjoy video games and music. I grew up as a percussionist
-      // and originially went to school for music. Despite having changed majors, I still
-      // absolutely love drumming and music and it will always mean so much to me. I enjoy
-      // playing PC gaming and love the recent growth of eSports.</p>

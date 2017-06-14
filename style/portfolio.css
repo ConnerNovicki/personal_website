@@ -1,9 +1,11 @@
-.portfolio-div {
-  margin-left: 50px;
+.portfolio-div-outer {
+  text-align: center;
 }
+
+
 
 .portfolio-div ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+
+  text-align: center;
 }

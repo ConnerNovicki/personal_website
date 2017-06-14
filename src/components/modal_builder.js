@@ -36,7 +36,7 @@ class ModalBuilder extends Component {
   renderRunProgram(run){
     if (run === undefined) return <div></div>;
 
-    return (<p>Try out the program here: <a href={run}>Run</a></p>);
+    return (<p>Try out the program here: <a href={run} target="_blank">Run</a></p>);
   }
 
   render() {
@@ -54,13 +54,13 @@ class ModalBuilder extends Component {
           show={this.state.showModal}
           onHide={this.closeModal}
           bsSize="lg" >
-          <Modal.Header>
+          <Modal.Header className="modal-header">
             <Modal.Title className="modal-title">{name}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <div className="modal-inside-div">
               <img src={src} alt={name} className="modal-inside-img" />
-              <p>Check out the code on GitHub here: <a href={github}>Code</a></p>
+              <p>Check out the code on GitHub here: <a href={github} target="_blank">Code</a></p>
               {this.renderRunProgram(run)}
             </div>
           </Modal.Body>

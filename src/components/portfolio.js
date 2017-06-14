@@ -44,10 +44,12 @@ const portfolioObj = [
 class Portfolio extends Component {
   render() {
     return (
-      <div className="portfolio-div">
-        <ul>
-        {portfolioObj.map((obj) => <ModalBuilder key={obj.name} data={obj} />)}
-        </ul>
+      <div className="col-md-6 col-md-offset-3">
+        <div className="portfolio-div">
+          <ul>
+          {portfolioObj.map((obj) => <ModalBuilder key={obj.name} data={obj} />)}
+          </ul>
+        </div>
       </div>
     );
   }

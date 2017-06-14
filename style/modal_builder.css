@@ -22,15 +22,17 @@
   color: rgb(207, 80, 9);
 }
 
+.modal-header {
+  background: rgba(73, 101, 223, 0.59);
+}
+
 .port-li {
   cursor: pointer;
   height: 35px;
   font-size: 18px;
   font-family: sans-serif;
-}
+  border-bottom: solid;
 
-
-.port-li {
   text-decoration: none;
   color: #000;
 
@@ -40,10 +42,10 @@
   -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
   transition: font-size 0.3s ease, background-color 0.3s ease;
   display: block;
-  width: 400px;
+  
 }
 
 .port-li:hover {
-  font-size: 25px;
-  background: #dbdbdb;
+  font-size: 22px;
+  background: rgba(73, 101, 223, 0.59);
 }
