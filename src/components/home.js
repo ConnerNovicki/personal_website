@@ -148,7 +148,7 @@ const Home = () => {
       )}
 
       {tableMaker(
-        'Other',
+        'Additional',
         [
           {
             title: 'GIT',

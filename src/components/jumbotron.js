@@ -15,7 +15,7 @@ const Jumbotron = () => {
             <nav>
               <ul>
                 <li><Link to="/">About</Link></li>
-                <li><Link to="/portfolio">Portfolio</Link></li>
+                <li><Link to="/portfolio">Projects</Link></li>
                 <li><Link to="/contact">Contact + Downloads</Link></li>
               </ul>
             </nav>
