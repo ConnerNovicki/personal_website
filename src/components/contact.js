@@ -14,7 +14,7 @@ const Contact = () => {
       <p><a href="https://github.com/ConnerNovicki" target="_blank">Github</a></p>
 
       <h1>Downloads</h1>
-      <p><a href={resume}>Resume</a></p>
+      <p><a href={resume} target="_blank">Resume</a></p>
       <div style={{height: 50}}></div>
     </div>
   );
