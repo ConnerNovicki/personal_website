@@ -37,6 +37,11 @@ const portfolioObj = [
     imgId: 'LOL_BUILDER',
     github: 'https://github.com/ConnerNovicki/LoL_Build_Creator',
     run: 'https://connernovicki.github.io/LoL_Build_Creator/'
+  },
+  {
+    name: 'League of Legends Stats Lookup',
+    imgId: 'LOL_STATS',
+    github: 'https://github.com/ConnerNovicki/LoL-Stats-Lookup'
   }
 ]
 

@@ -7,6 +7,7 @@ const IMG_SRC = {
   CHESS: require('../../images/chess.png'),
   GA_BINARY: require('../../images/ga_binary.png'),
   LOL_BUILDER: require('../../images/lol_builder.png'),
+  LOL_STATS: require('../../images/lol_stats.png'),
   PATHFINDING: require('../../images/pathfind.png'),
   STEERING: require('../../images/steering.png'),
   TETRIS: require('../../images/tetris.png'),
