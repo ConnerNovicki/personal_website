@@ -4,6 +4,7 @@
 }
 
 .about-me {
+  text-align: left;
   border-style: solid;
   border-color: rgb(96, 96, 96);
   border-width: 1px;
@@ -25,4 +26,8 @@
 
 .uncentered-td {
   text-align: left;
+}
+
+.offset-white-background {
+  background-color: rgb(236, 236, 236);
 }

@@ -7,8 +7,8 @@ const chartMaker = (data) => {
   return (
     <tbody>
       <tr>
-        <td className="col-md-3">{title}</td>
-        <td className="col-md-9 uncentered-td">
+        <td className="col-md-4 offset-white-background">{title}</td>
+        <td className="col-md-8 uncentered-td offset-white-background">
           <ul>
           {bulletPoints.map(point => (
             <li>{point}</li>
@@ -48,10 +48,12 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="col-md-10 col-md-offset-1 about-me">
-        <p>I graduated from the University of Kentucky with a B.S. in Mathematics
-        and a minor in Computer Science.</p>
-        <br/>
-        <p>I am looking for a <b>JavaScript developer</b> job.</p>
+        <p>I love learning new technologies and exploring new code. I'm
+        blessed that I get to do something I love everyday and make a career out of it.
+        I'm a huge fan of JavaScript, ReactJS and Angular, and I'm always looking to learn
+        the newest tools.</p>
+        <p>I'm currently looking for an entry-level developer job to expand my skills
+        and have fun doing it.</p>
       </div>
 
       <h3 className="col-md-12">Current skills include:</h3>
@@ -64,24 +66,15 @@ const Home = () => {
           {
             title: 'ReactJS, React Native, and Redux',
             bulletPoints: [
-              'I made this site (and a few others on my GitHub) with ReactJS and Redux.',
-              'Strong understanding of the flow of a Redux application (Actions -> Middleware -> Reducers -> Store)',
-              'Understanding of iOS development (with FlexBox) and how to create cross-platform apps'
+              '3+ projects',
+              'iOS/Android cross-platform apps with React Native'
             ]
           },
           {
-            title: 'Angular 2/4 and Ngrx',
+            title: 'Angular 4 and Ngrx',
             bulletPoints: [
-              'Understanding of how to break down apps into components with use of directives, routing, and services.',
-              'Comfortable using Ngrx (Actions, Reducers, State Interfaces, Store, and @Effects)'
-            ]
-          },
-          {
-            title: 'General',
-            bulletPoints: [
-              'Comfortable using ES2016, prototypes, classes, etc.',
-              'Experience writing applications using AJAX requests, JSON, and jQuery.',
-              'I have been putting in hours of JavaScript coding a day for the last year.'
+              'Experience with async API requests with @Effects',
+              'Bootstrap, TypeScript, and RxJS integration'
             ]
           },
           {
@@ -90,19 +83,32 @@ const Home = () => {
               'Knowledge of dependency/module management with NPM.',
               'Understanding of basics of Webpack.'
             ]
-          }
+          },
+          {
+            title: 'ES2016',
+            bulletPoints: [
+              'AJAX, JSON, jQuery',
+              'Short-hand syntax'
+            ]
+          },
         ]
       )}
 
       {tableMaker(
-        'Linux / Unix',
+        'Operating Systems',
         [
           {
-            title: 'Command Line Navigation',
+            title: 'Linux/Unix',
             bulletPoints: [
-              'Practical knowledge navigating the Mac and Linux command line.',
-              'Practical use of many different CLI\'s and console-based applications.',
-              'Last 4 CS classes in college all required using Linux environment.'
+              'Command line navigation',
+              'Experience with multiple CLI\'s',
+              'Linux on Windows via SSH'
+            ]
+          },
+          {
+            title: 'Windows/Mac',
+            bulletPoints: [
+              'Frequently use both environments'
             ]
           }
         ]
@@ -114,15 +120,15 @@ const Home = () => {
           {
             title: 'C++',
             bulletPoints: [
-              'Completed 4 college C++ courses.',
-              'Experience working with classes, inheritance, abstraction, and polymorphism.'
+              '4+ college course',
+              'Data Structures and Algorithm Design'
             ]
           },
           {
             title: 'Java',
             bulletPoints: [
-              'Worked with Spark on a small project.',
-              'Understand basics of Gradle/Maven dependency management tools.'
+              'Spark',
+              'Gradle/Maven'
             ]
           }
         ]
@@ -132,16 +138,16 @@ const Home = () => {
         'Front End',
         [
           {
-            title: 'HTML5 + CSS3',
+            title: 'HTML5, CSS3',
             bulletPoints: [
-              'Built this site (and many others) with HTML/CSS'
+              'Web and Mobile experience'
             ]
           },
           {
             title: 'Bootstrap',
             bulletPoints: [
-              'Understanding of how to use the grid system and use pre-made buttons, tables, etc.',
-              'Experience using with both ReactJS and Angular 4'
+              'Integration with ReactJS and Angular',
+              'Flexbox with iOS/Android'
             ]
           }
         ]
@@ -153,22 +159,20 @@ const Home = () => {
           {
             title: 'GIT',
             bulletPoints: [
-              'Use version control on every project.',
-              'Experience working with others on same repository.',
-              'Experience with both GitHub and BitBucket.'
+              'GitHub, BitBucket'
             ]
           },
           {
             title: 'REST APIs',
             bulletPoints: [
-              'Experience working with APIs with Angular, React, and plain JavaScript.',
-              'Have multiple projects on GitHub using Weather API and Riot API.'
+              'Async API requests with both Angular and React',
+              'Riot, OpenWeatherMap, and YouTube APIs'
             ]
           },
           {
             title: 'Python',
             bulletPoints: [
-              'Comfortable with Python syntax (classes, functions, etc.)'
+              'Functional approach to programming'
             ]
           }
         ]
